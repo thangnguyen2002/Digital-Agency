@@ -182,15 +182,15 @@ Inline-block là kiểu kết hợp giữa Inline và Block, nó vừa có thể
 }
 
 /* Tes Section */
-.tes-section{
+#tes-section{
     margin-top: 136px;
 }
-.tes-section .tes-section-text p{
+#tes-section .tes-section-text p{
     font-size: 16px;
     margin-bottom: 16px;
     text-align: center;
 }
-.tes-section .tes-section-text h1{
+#tes-section .tes-section-text h1{
     font-size: 48px;
     font-weight: 700;
     max-width: 435.69px;
@@ -198,14 +198,14 @@ Inline-block là kiểu kết hợp giữa Inline và Block, nó vừa có thể
     margin: 0 auto;
     text-transform: capitalize;
 }
-.tes-section .tes-info{
+#tes-section .tes-info{
     display: block;
     margin-top: 38.65px;
     display: flex;
     justify-content: center;
 
 }
-.tes-section .tes-info img{
+#tes-section .tes-info img{
     width: 100%;
     margin-right: 15px;
 }

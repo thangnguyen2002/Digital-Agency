@@ -104,20 +104,20 @@
     }
 
     /* Tes Section */
-    .tes-section{
+    #tes-section{
         margin-top: 120px;
     }
-    .tes-section .tes-section-text p{
+    #tes-section .tes-section-text p{
         font-size: 12px;
     }
-    .tes-section .tes-section-text h1{
+    #tes-section .tes-section-text h1{
         font-size: 32px;
     }
-    .tes-section .tes-info{
+    #tes-section .tes-info{
         flex-direction: column;
         margin-top: 16px;
     }
-    .tes-section .tes-info img{
+    #tes-section .tes-info img{
         margin-bottom: 40px;
     }
 
