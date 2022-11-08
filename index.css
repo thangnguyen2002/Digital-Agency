@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+/* Reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    
+}
+/* NavBar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+
+.navbar .navbar_left .navbar_left_logo{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #272D38;
+}
+.navbar .navbar_right .navbar_right_list{
+    display: flex;
+
+}
+.navbar .navbar_right .navbar_right_list li{
+    list-style: none;
+    margin-left: 50px;
+}
+.navbar .navbar_right .navbar_right_list li:last-child{
+    display: none;
+}
+.navbar .navbar_right .navbar_right_list li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #272D38;
+}
+
+/* Hero section */
+.h_section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.h_section .h_section_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.h_section .h_section_left h2{
+    font-weight: 700;
+    font-size: 64px;
+    max-width: 540px;
+    /* height: auto (default) tu tinh toan height sao cho content (chữ) nam ben trong border, ko bi tran ra(co the dung border de nhin ro~ vi sao) */
+    height: auto;
+    /* height: 50px; */
+    /* border: 1px solid black; */
+
+    /* auto -> tu dong responsive */
+    /* 100% = font-size = 64px (neu 200% = 200% of fontsize = 200% cua 64 la 128 */
+    /* line-height = height(vdu: 196px) => tu can giua dua tren height */
+    line-height: 100%; 
+    text-transform: capitalize;
+}
+.h_section .h_section_left p{
+    font-weight: 400;
+    font-size: 18px;
+    /* van muon dung px thi dung max-width de responsive */
+    max-width: 500px;
+    height: auto;
+    color: #272D38;
+    text-transform: capitalize;
+}
+.h_section .h_section_left button{
+    max-width: 167px;
+    height: 48px;
+    border-radius: 8px;
+    text-transform:uppercase;
+    background-color: #8EADD5;
+    color: white;
+    border: none;
+}
+.h_section .h_section_right img{
+    /* css img -> cho width:100% de responsive */
+    width: 100%;
+}
+
+/* Company Section */
+.c-section{
+    margin-top: 157px;
+}
+.c-section .c-section-words{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.c-section .c-section-logo-img{
+    /* img la inline -> ko an width, height, padding và margin theo chiều dọc (top, bottom)
+    Block, ta hoàn toàn có thể định nghĩa width và height cho nó (Mặc định giá trị là 100% so với phần tử cha). */
+    /* Nếu như bạn muốn hiển thị Element của mình theo kiểu Inline, nhưng lại muốn căn chỉnh được width, height, padding và margin theo chiều dọc thì đây là thứ bạn cần.
+Inline-block là kiểu kết hợp giữa Inline và Block, nó vừa có thể hiển thị trên cùng dòng như Inline, lại có thể căn chỉnh được các giá trị như đã nêu ở trên giống như Block. */
+    /* muốn căn giữa (width < 100% thẻ cha) */
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Brand Section */
+.b-section{
+    margin-top: 136px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.b-section .b-section-left img{
+    width: 100%;
+    /* phai tro den toi tận thẻ img moi css dc cho no vi no la the chua anh? */
+}
+.b-section .b-section-right h1{
+    font-size: 48px;
+    max-width: 435.69px;
+    height: 102.35px;
+    line-height: 100%;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #272D38;
+    margin-bottom: 25.6px;
+}
+.b-section .b-section-right p{
+    font-size: 16.5px;
+    max-width: 392.22px;
+    height: auto;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #272D38;
+    line-height: 28px;
+    margin-bottom: 46px;
+}
+.b-section .b-section-right .mobile{
+    display: none;
+}
+
+/* Custom Section */
+.custom-section{
+    display: flex;
+    margin-top: 136px;
+    justify-content: space-between;
+}
+.custom-section .cus-left h1{
+    max-width: 435px;
+    height: auto;
+    font-weight: 700;
+    color: #272D38;
+    font-size: 48px;
+    line-height: 48px;
+}
+.custom-section .cus-left p{
+    margin-top: 26px;
+    font-weight: 600;
+    max-width: 392px;
+    height: auto;
+    color: #272D38;
+    font-size: 16.5px;
+    line-height: 27.5px;
+    text-transform: capitalize;
+    margin-bottom: 49.59px;
+}
+.custom-section .cus-right img{
+    width: 100%;
+}
+.custom-section .cus-left .mobile{
+    display: none;
+}
+
+/* Tes Section */
+.tes-section{
+    margin-top: 136px;
+}
+.tes-section .tes-section-text p{
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.tes-section .tes-section-text h1{
+    font-size: 48px;
+    font-weight: 700;
+    max-width: 435.69px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+.tes-section .tes-info{
+    display: block;
+    margin-top: 38.65px;
+    display: flex;
+    justify-content: center;
+
+}
+.tes-section .tes-info img{
+    width: 100%;
+    margin-right: 15px;
+}
+
+/* Contact Section */
+.contact-section .desktop{
+    width: 100%;
+    margin-top: 136px;
+}
+.contact-section .mobile{
+    display: none;
+}
+
+/* Footer */
+.footer .desktop{
+    margin-top: 138px;
+    width: 100%;
+    height: 443px;
+}
+.footer .mobile{
+    display: none;
+}
+
+
+
+
+

@@ -1,0 +1,144 @@
+@media  (max-width: 600px) {
+    /* Nav Bar */
+    .navbar .navbar_right .navbar_right_list li:nth-child(1){
+        display: none;
+    }
+    .navbar .navbar_right .navbar_right_list li:nth-child(2){
+        display: none;
+    }
+    .navbar .navbar_right .navbar_right_list li:nth-child(3){
+        display: none;
+    }
+    .navbar .navbar_right .navbar_right_list li:nth-child(4){
+        display: none;
+    }
+    .navbar .navbar_right .navbar_right_list li:nth-child(5){
+        display: block;
+    }
+
+    /* Hero section */
+    .h_section{
+        /* class này có flex bên index.css rồi, nên ko cần ghi đè nữa */
+        flex-direction: column;
+    }
+
+    .h_section .h_section_left h2{
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        font-weight: 800;
+    }
+    .h_section .h_section_left p{
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .h_section .h_section_left button{
+        /* display: block; */
+        width: 100%;
+        margin: 24px auto;
+        margin-bottom: 48px;
+    }
+    
+    /* Company Section */
+    .c-section{
+        margin-top: 120px;
+    }
+    .c-section .c-section-words{
+        font-size: 14px;
+        font-weight: 200;
+    }
+    .c-section .c-section-logo img{
+        width: 100%;
+    }
+
+    /* Brand Section */
+    .b-section{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 88px;
+    }
+    .b-section .b-section-right h1{
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    .b-section .b-section-right p{
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .b-section .b-section-right .desktop{
+        display: none;
+    }
+    .b-section .b-section-right .mobile{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24.5px;
+        /* justify xet theo chieu hien tai mà chạy (ko cứ phải là theo chiều ngang (khi row ta tưởng là ngang), còn tùy vào column or row)
+    align-items xét theo CHIỀU VUÔNG GÓC VỚI DIRECTION hiện tại (ko cứ phải là dọc (khi row mà flex-end ta thấy đi xuống cuối theo chiều dọc mà tưởng vậy)
+    còn tùy vào row or column mà chạy*/
+    }
+
+    /* Custom Section */
+    .custom-section{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .custom-section .cus-left h1{
+        font-size: 32px;
+        /* max-width: 380px; */
+    }
+    .custom-section .cus-left p{
+        font-size: 14px;
+    }
+    .custom-section .cus-left .desktop{
+        display: none;
+    }
+    .custom-section .cus-left .mobile{
+        display: block;
+        margin-bottom: 24.5px;
+    }
+
+    /* Tes Section */
+    .tes-section{
+        margin-top: 120px;
+    }
+    .tes-section .tes-section-text p{
+        font-size: 12px;
+    }
+    .tes-section .tes-section-text h1{
+        font-size: 32px;
+    }
+    .tes-section .tes-info{
+        flex-direction: column;
+        margin-top: 16px;
+    }
+    .tes-section .tes-info img{
+        margin-bottom: 40px;
+    }
+
+    /* Contact Section */
+    .contact-section .desktop{
+        display: none;
+    }
+    .contact-section .mobile{
+        display: block;
+        width: 100%;
+        margin-top: 80px;
+        /* 120 - 40 (do tes-info img margin bot = 40 */
+    }
+
+    /* Footer */
+    .footer .desktop{
+        display: none;
+    }
+    .footer .mobile{
+        display: block;
+        margin-top: 128px;
+        width: 100%;
+    }
+}
