@@ -196,38 +196,120 @@ Inline-block là kiểu kết hợp giữa Inline và Block, nó vừa có thể
     max-width: 435.69px;
     text-align: center;
     margin: 0 auto;
+    line-height: 48px;
     text-transform: capitalize;
 }
 #tes-section .tes-info{
-    display: block;
-    margin-top: 38.65px;
     display: flex;
-    justify-content: center;
-
+   margin-top: 38.65px;
+   justify-content: space-evenly;
+}
+.info1{
+    max-width: 345px;
+    height: 334px;
+    width: 30%;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+    text-align: center;
 }
 #tes-section .tes-info img{
-    width: 100%;
-    margin-right: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    
+}
+#tes-section .tes-info .info1 h4{
+    max-width: 138px;
+    height: auto;
+    margin: 0px auto;
+    margin-bottom: 27px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27.5px;
+}
+#tes-section .tes-info .info1 p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 281px;
+    height: auto;
+    margin: 0 auto;
+    text-transform: capitalize;
 }
 
-/* Contact Section */
-.contact-section .desktop{
-    width: 100%;
+/* Customer support section */
+.customer{
+    display: flex;
     margin-top: 136px;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    border-radius: 8px;
 }
-.contact-section .mobile{
-    display: none;
+.customer .cs-left img{
+    margin-left: 75px;
+    /* width: 100%; */
+}
+.customer .cs-right{
+    padding: 100px 90px 135px 0;
+}
+.customer .cs-right h1{
+    font-size: 48px;
+    max-width: 361px;
+    height: auto;
+    line-height: 48px;
+    font-weight: bold;
+}
+.customer .cs-right p{
+    max-width: 360px;
+    height: auto;
+    margin: 16px 0 32px;
+}
+.customer .cs-right button{
+    color: #fff;
+    background-color: #8EADD5;
+    border-radius: 8px;
+    border: none;
+    width: 167px;
+    height: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 /* Footer */
-.footer .desktop{
-    margin-top: 138px;
-    width: 100%;
+.footer{
+    background-color: #f6f6f6;
+}
+.footer .footer-list{
+    display: flex;
+    justify-content: space-evenly;
     height: 443px;
+    margin-top: 138px;
+    line-height: 1.5;
 }
-.footer .mobile{
-    display: none;
+.footer .footer-list .footer-item h4{
+    margin-top: 105px;
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 139px;
+    margin-bottom: 40px;
 }
+.footer .footer-list .footer-item p{
+    max-width: 189px;
+    text-transform: capitalize;
+    height: 48px;
+}
+.footer .footer-list .footer-item ul li{
+    list-style: none;
+    margin-bottom: 24px;
+}
+.footer .rubbish{
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight: 300px;
+    font-size: 16px;
+}
+
 
 
 

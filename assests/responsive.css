@@ -114,31 +114,65 @@
         font-size: 32px;
     }
     #tes-section .tes-info{
-        flex-direction: column;
-        margin-top: 16px;
+       display: flex;
+       flex-direction: column;
     }
-    #tes-section .tes-info img{
+    #tes-section .tes-info .info1{
+        width: 100%;
         margin-bottom: 40px;
     }
 
-    /* Contact Section */
-    .contact-section .desktop{
+    /* Customer support section */
+    .customer .cs-left img{
         display: none;
     }
-    .contact-section .mobile{
+    .customer .cs-right{
+        padding: 52px 35px;
+    }
+    .customer .cs-right h1, p{
+        /* max-width: 100%; */
+        text-align: center;
+    }
+    .customer .cs-right h1{
+        font-size: 32px;
+        line-height: 100%; 
+        /* = 32px */
+    }
+    .customer .cs-right p{
+        font-size: 14px;
+        line-height: 25.5px;
+    }
+    .customer .cs-right button{
         display: block;
-        width: 100%;
-        margin-top: 80px;
-        /* 120 - 40 (do tes-info img margin bot = 40 */
+        margin: 0 auto;
     }
 
     /* Footer */
-    .footer .desktop{
-        display: none;
-    }
-    .footer .mobile{
-        display: block;
+    .footer .footer-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
         margin-top: 128px;
-        width: 100%;
+        line-height: 20px;
     }
+    .footer .footer-list .footer-item{
+        line-height: 20px;
+        text-align: center;
+        height: auto;
+    }
+    .footer .footer-list .footer-item h4{
+        margin-top: 72px;
+    }
+    .footer .footer-list .footer-item .footer-first{
+        max-width: 100%;
+        margin-bottom: 34px;
+        margin-top: 104px;
+    }
+    .footer .rubbish{
+        text-align: center;
+        margin: 68px 0 24px 0;
+        font-size: 12px;
+    }
+    
 }
